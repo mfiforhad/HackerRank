@@ -52,9 +52,23 @@ students = {"Alice": 85, "Bob": 72, "Charlie": 91, "David": 68}
 print(max(students, key=lambda x: students[x]))
 """
 
-
+"""
 text = "hello"
 
 palindrome = True if text == text[::-1] else False
 
 print(palindrome)
+"""
+
+n = int(input())
+
+user_input = list(map(int, input().split()))
+
+for num in user_input[:n]:
+    if user_input.count(num) == 1:
+        print(num)
+        break
+else:
+    print(-1)
+
+
